@@ -1,0 +1,11 @@
+.footer-wrapper {
+    background-color: #C5D4EC;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    margin: 0;
+}
