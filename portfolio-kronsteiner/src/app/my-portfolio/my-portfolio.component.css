@@ -7,8 +7,10 @@
 
 .project-width-half {
     background-color: #C5D4EC;
-    flex: 0 0 49%;
     padding: 20px;
+    @media(min-width:650px){
+        flex: 0 0 49%;
+    }
 }
 
 .image {
@@ -22,7 +24,14 @@
     margin: 0 40px;
 }
 
+.work-description {
+    margin: auto 0;
+}
+
 .project-row {
     display: flex;
     gap: 2%;
+    @media(max-width:650px){
+        flex-wrap:wrap;
+    }
 }
