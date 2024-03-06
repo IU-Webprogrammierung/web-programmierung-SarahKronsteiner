@@ -1,111 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  
-  :target:before {
-    content: "";
-    display: block;
-    height: 95px;
-    margin: -95px 0 0;
-  }
-  
-  h1, .style-h1 {
-    font-family: "Arial", sans-serif !important;
-    font-size: 32px;
-  }
-  @media (min-width: 992px) {
-    h1, .style-h1 {
-      font-size: 50px !important;
-    }
-  }
-  
-  h2 {
-    font-weight: 600 !important;
-    font-family: "Arial", sans-serif !important;
-  }
-  
-  h3 {
-    font-family: "Arial", sans-serif !important;
-    font-weight: 600 !important;
-  }
-  @media (min-width: 992px) {
-    h3 {
-      font-size: 20px !important;
-    }
-  }
-  
-  .margin-sm {
-    margin-top: 20px;
-  }
-  @media (min-width: 992px) {
-    .margin-sm {
-      margin-top: 0;
-    }
-  }
-  
-  .subheading-large {
-    color: #493e3e;
-    font-size: 18px;
-    width: 75%;
-  }
-  @media (min-width: 992px) {
-    .subheading-large {
-      width: 45%;
-      font-size: 24px;
-    }
-  }
-  
-  .subheading-small {
-    color: #000000;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .web-link {
-    color: #493e3e;
-  }
-  .web-link:hover {
-    color: #493e3e;
-  }
-  
-  body {
-    font-family: "Arial", sans-serif;
-  }
-  
-  p, li {
-    font-family: "Arial", sans-serif !important;
-    font-weight: normal !important;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .font-margin-top {
-    margin: 10% 0 5%;
-  }
-  
-  .margin-bottom {
-    margin-bottom: 30px;
-  }
-  
-  @media (min-width: 768px) {
-    .margin-bottom-md {
-      margin-bottom: 80px;
-    }
-  }
-  
-  .btn {
-    color:#000000;
-    background-color: #C5D4EC;
-    border-color: #C5D4EC;
-  }
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-  .btn:hover {
-    color:#000000;
-    background-color: red;
-    border-color: #f129f8;
+:target:before {
+  content: "";
+  display: block;
+  height: 95px;
+  margin: -95px 0 0;
+}
+
+h1,
+.style-h1 {
+  font-family: "Arial", sans-serif !important;
+  font-size: 32px;
+}
+
+@media (min-width: 992px) {
+
+  h1,
+  .style-h1 {
+    font-size: 50px !important;
   }
-  
+}
+
+h2 {
+  font-weight: 600 !important;
+  font-family: "Arial", sans-serif !important;
+}
+
+h3 {
+  font-family: "Arial", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+@media (min-width: 992px) {
+  h3 {
+    font-size: 20px !important;
+  }
+}
+
+.margin-sm {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .margin-sm {
+    margin-top: 0;
+  }
+}
+
+.subheading-large {
+  color: #493e3e;
+  font-size: 18px;
+  width: 75%;
+}
+
+@media (min-width: 992px) {
+  .subheading-large {
+    width: 45%;
+    font-size: 24px;
+  }
+}
+
+.subheading-small {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.web-link {
+  color: #493e3e;
+}
+
+.web-link:hover {
+  color: #493e3e;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+p,
+li {
+  font-family: "Arial", sans-serif !important;
+  font-weight: normal !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-margin-top {
+  margin: 10% 0 5%;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .margin-bottom-md {
+    margin-bottom: 80px;
+  }
+}
+
+.button {
+  color: #000000;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 36px -13px rgba(0, 0, 0, 0.75);
+  border: none;
+  transition: 1s;
+}
+.button-primary {
+  background-color: #8BAADA;
+}
+
+.button-white {
+  background-color: white;
+  border: 1px solid #8BAADA;
+}
+
+.button-primary:hover {
+  background-color: #6e87ac;
+}
+
+.button-white:hover {
+  background-color: #c4d6f0;
+}
