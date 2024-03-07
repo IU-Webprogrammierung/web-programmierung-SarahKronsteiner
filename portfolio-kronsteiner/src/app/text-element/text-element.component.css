@@ -1,0 +1,17 @@
+.text-element-wrapper h2 {
+    text-align:left;
+}
+
+.text-element-wrapper .bold {
+font-weight:bold;
+}
+
+.text-element-wrapper {
+    margin: 0 50px;
+}
+
+.solution, .user, .problem-analysis, .goals {
+    padding-top: 20px;
+border-top: 1px solid #C5D4EC;
+margin-bottom: 50px;
+}
