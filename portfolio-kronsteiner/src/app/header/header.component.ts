@@ -18,22 +18,5 @@ export class HeaderComponent {
       action: ""
     }
   }
-  menuItems= [
-    {
-      name: "Home",
-      link: ""
-    },
-    {
-      name: "About me",
-      link: ""
-    },
-    {
-      name: "My Portfolio",
-      link: ""
-    },
-    {
-      name: "Contact",
-      link: ""
-    },
-  ]
+
 }

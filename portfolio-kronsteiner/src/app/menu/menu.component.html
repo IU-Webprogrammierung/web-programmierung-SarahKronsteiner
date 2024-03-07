@@ -1,0 +1,22 @@
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 d-flex align-items-center">
+                <a href="#">
+                    <img class="logo" src="../../assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-9">
+                <nav>
+                    <input type="checkbox" id="nav" class="hidden"/>
+                    <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                    <div class="nav-container hide-me">
+                        <ul>
+                            <li *ngFor="let menu of menuItems"><a href="#">{{menu.name}}</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

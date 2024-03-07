@@ -6,11 +6,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutMeComponent, NgbModule, ContactComponent, FooterComponent, HeaderComponent, MyPortfolioComponent],
+  imports: [RouterOutlet, NgbModule, FooterComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
