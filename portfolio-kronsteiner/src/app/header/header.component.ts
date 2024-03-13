@@ -12,7 +12,7 @@ export class HeaderComponent {
   headerContent={
     subHeading: "UX Designer", 
     heading: "Sarah Kronsteiner", 
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit velit, imperdiet eget tempor non, faucibus eget tortor. Sed eleifend sodales.", 
+    text: "Welcome to my online portfolio! My name is Sarah, and I'm a  passionate UX designer with a strong background in crafting intuitive  and engaging user experiences.", 
     button: {
       text: "Let's talk",
       action: ""
