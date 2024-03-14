@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PortfolioKronsteiner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 d-flex align-items-center">
+                    <a href="#">
+                        <img class="logo" src="./images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-9">
+                    <nav>
+                        <input type="checkbox" id="nav" class="hidden"/>
+                        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                        <div class="nav-container hide-me">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="header-bottom" data-animation="zoomIn">
+            <div class="header-text">
+                <div class="headings">
+                    <p>UX Designer</p>
+                    <h1>Sarah Kronsteiner</h1>
+                    <p class="subheading-large">Welcome to my online portfolio! My name is Sarah, and I'm a  passionate UX designer with a strong background in crafting intuitive  and engaging user experiences.</p>
+                    <a type="button" href="mailto:sarah.kronsteiner162@gmail.com" class="button button-primary">Let's talk</a>
+                </div>
+                <img class="image" src="./images/dummy profile imagedummy profile image.png">
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <section class="about-me" id="about">
+        <h2>About me</h2>
+        <div class="about-me-content">
+                <p class="about-me-text"> Currently, I am pursuing my studies at IU University, majoring in UX Design, with an anticipated completion date of January 2025.
+
+                    In my professional capacity, I serve as a Quality Auditor at Amazon. Additionally, I have had the privilege of participating in an apprenticeship program focusing on Learning Experience Design (LXD), augmenting my skills in crafting engaging e-learning materials.
+                    My approach to UX design revolves around a comprehensive understanding of user behavior, which I leverage to develop meticulously crafted wireframes and prototypes.
+                </p>
+            <div class="skillbar-wrapper">
+                <div class="skill_wrapper">
+                    <div class="description">
+                        <span>Figma</span>
+                    </div>
+                    <div class="progress_bar_wrapper">
+                        <div class="pro-progress_bar ninety" data-percent="90"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="description">
+                        <span>Articulate Storyline</span>
+                    </div>
+                    <div class="progress_bar_wrapper">
+                        <div class="pro-progress_bar seventyfive" data-percent="75"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="description">
+                        <span>Illustrator</span>
+                    </div>
+                    <div class="progress_bar_wrapper">
+                        <div class="pro-progress_bar eightyfive" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="description">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress_bar_wrapper">
+                        <div class="pro-progress_bar fiftyfive" data-percent="55"></div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="description">
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div class="progress_bar_wrapper">
+                        <div class="pro-progress_bar eighty" data-percent="80"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="./downloads/lebenslauf.pdf" class="button button-primary" target="_blank">Download CV</a>
+
+</section>
+<section class="work" id="portfolio">
+    <h2>My Portfolio</h2>
+
+    <a class="project-width-max" href="./moveeasy.html">
+        <img class="image" src="./images/iPhone 15moveEasy home.png" alt="project">
+        <div class="work-description">
+            <p class="subheading-small">Moving APP</p>
+
+            <h3>MoveEasy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit velit, imperdiet eget tempor non, faucibus eget tortor. Sed eleifend sodales.
+            </p>
+
+        </div>
+    </a>
+    <div class="project-row">
+        <a href="./torpedo.html" class="project-width-half">
+            <img class="image" src="./images/MacBook Pro 16torpedo home.png" alt="project">
+        </a>
+        <a href="./dogtraining.html" class="project-width-half">
+            <img class="image" src="./images/MacBook Pro 16dog training home.png" alt="project">
+        </a>
+
+    </div>
+    <a href="./otherProject.html" class="project-width-max">
+        <img class="image" src="./images/iPhone 15dummy phone.png" alt="project">
+        <div class="work-description">
+            <p class="subheading-small">Lorem Ipsum dolor</p>
+
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit velit, imperdiet eget tempor non, faucibus eget tortor. Sed eleifend sodales.
+
+            </p>
+
+        </div>
+    </a>
+</section>
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p class="contact-text">If you have any questions, want to know more about me or just want to say hello
+        - you are welcome to email me at any time. I'm glad about your message.</p>
+    <div class="button-wrapper">
+        <a type="button" href="mailto:sarah.kronsteiner162@gmail.com" class="button button-primary">Contact me</a>
+        <a type="button" href="https://www.google.at" target="_blank" class="button button-white">LinkedIn</a>
+    </div>
+</section>
+
+
+</body>
+
+<footer class="footer-wrapper">
+    <p class="footer-text">Webseite von Sarah Kronsteiner, 2024</p>
+</footer>
+</html>

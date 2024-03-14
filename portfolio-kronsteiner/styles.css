@@ -1,0 +1,160 @@
+/*About me */
+.about-me-content {
+    display: flex;
+    gap: 20px;
+    @media(max-width:650px){
+        flex-wrap:wrap;
+    }
+}
+
+.skillbar-wrapper {
+    @media(min-width:650px){
+        flex: 0 0 50%;
+    }
+}
+
+.about-me-text {
+    @media(min-width:650px){
+        flex: 0 0 50%;
+    }
+}
+
+.about-me {
+    margin: 0 40px 20px;
+}
+
+.skill_wrapper {
+    margin-right: 20px;
+}
+
+
+
+/*portfolio*/
+
+:root {
+    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-duration: 2s;
+  }
+  
+  
+  .animations-disabled,
+  .animations-disabled [data-animation] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn;
+  }
+  
+  .progress_bar_wrapper {
+    background-color: #493e3e;
+    margin-bottom: 25px;
+    position: relative;
+    height: 5px;
+  }
+  .progress_bar_wrapper .pro-progress_bar {
+    width: 0;
+    background-color: rgb(85, 147, 200);
+    height: 100%;
+    border-radius: 20px;
+  }
+  .progress_bar_wrapper .pro-progress_bar.ninety{
+    width: 90% !important;
+  }
+
+  .progress_bar_wrapper .pro-progress_bar.eightyfive{
+    width: 85% !important;
+  }
+
+  .progress_bar_wrapper .pro-progress_bar.fiftyfive{
+    width: 55% !important;
+  }
+
+  .progress_bar_wrapper .pro-progress_bar.seventyfive{
+    width: 75% !important;
+  }
+
+  .progress_bar_wrapper .pro-progress_bar.eighty{
+    width: 80% !important;
+  }
+
+  .progress_bar_wrapper .pro-progress_bar {
+    transition: width 1.4s ease-in-out 0.5s;
+    border-radius: inherit;
+  }
+
+
+  .project-width-max {
+    background-color: #C5D4EC;
+    padding: 20px;
+    display: flex;
+    margin: 2% 0;
+}
+
+.project-width-half {
+    background-color: #C5D4EC;
+    padding: 20px;
+    @media(min-width:650px){
+        flex: 0 0 49%;
+    }
+}
+
+.project-width-half .image {
+    max-width: 90%;
+}
+
+.project-width-max .image {
+    flex: 0 0 30%;
+    height: auto;
+    margin-right: 20px;
+    max-width: 250px;
+}
+
+.work a > * {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.work a:hover {
+  text-decoration: none !important;
+  background-color: #6e87ac;
+  transition: 0.5s;
+
+}
+
+
+.work {
+    margin: 0 150px;
+}
+
+.work-description {
+    margin: auto 0;
+}
+
+.project-row {
+    display: flex;
+    gap: 2%;
+    @media(max-width:650px){
+        flex-wrap:wrap;
+    }
+}
+
+/*contact*/
+
+.contact {
+    margin: 50px 30px;
+    text-align: center;
+}
+
+.contact .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text {
+    max-width: 80%;
+    margin: 0 auto 20px;
+}

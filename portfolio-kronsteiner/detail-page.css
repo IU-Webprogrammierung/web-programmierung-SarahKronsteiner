@@ -1,0 +1,156 @@
+/*detail header*/
+.detail-header {
+    margin: 0 50px;
+    margin: 120px 50px 30px;
+}
+.detail{
+    display: flex;
+}
+
+.detail-element {
+    width: 33%;
+}
+
+.elements-heading {
+    text-transform: uppercase;
+margin-bottom: 0;
+}
+
+.detail-header h2 {
+    text-align:left;
+}
+
+
+/* Slider from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  padding-top: 20px;
+  border-top: 1px solid #C5D4EC;
+  margin: 0 50px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+    height: 360px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-button, .slider-button:hover {
+    background-color: unset;
+border: unset;
+}
+
+.slider-button:hover path{
+fill:#52688A;
+}
+
+
+/*text element*/
+
+.text-element-wrapper h2 {
+    text-align:left;
+}
+
+.text-element-wrapper .bold {
+font-weight:bold;
+}
+
+.text-element-wrapper {
+    margin: 0 50px;
+}
+
+.solution, .user, .problem-analysis, .goals {
+    padding-top: 20px;
+border-top: 1px solid #C5D4EC;
+margin-bottom: 50px;
+}
+
+/*wireframes*/
+
+.wireframe-wrapper {
+    margin: 0 50px;
+    padding-top: 20px;
+border-top: 1px solid #C5D4EC;
+margin-bottom: 50px;
+}
+
+.wireframe-image {
+    max-width: 100%;
+}
+
+.wireframe-wrapper h2 {
+    text-align:left;
+}
+
+/*final product*/
+
+.final-product-wrapper {
+    margin: 0 50px;
+    padding-top: 20px;
+border-top: 1px solid #C5D4EC;
+margin-bottom: 50px;
+}
+
+.final-product-wrapper h2 {
+    text-align: left;
+}
+
+.final-product {
+    display: flex;
+    gap: 20px;
+    @media(max-width:650px){
+        flex-wrap:wrap;
+    }
+}
+
+.final-product-text, .final-product-image {
+    @media(min-width:650px){
+        flex: 0 0 50%;
+    }
+}
+
+.final-product-image {
+    max-width: 500px;
+    width: -webkit-fill-available;
+}
