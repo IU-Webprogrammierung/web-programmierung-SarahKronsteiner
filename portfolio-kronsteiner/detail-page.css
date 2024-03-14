@@ -139,13 +139,18 @@ margin-bottom: 50px;
 .final-product {
     display: flex;
     gap: 20px;
-    @media(max-width:650px){
+
+}
+
+@media(max-width:650px){
+    .final-product {
         flex-wrap:wrap;
     }
 }
 
-.final-product-text, .final-product-image {
-    @media(min-width:650px){
+
+@media(min-width:650px){
+    .final-product-text, .final-product-image {
         flex: 0 0 50%;
     }
 }

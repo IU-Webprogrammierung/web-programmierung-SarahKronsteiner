@@ -1,30 +1,38 @@
 /*About me */
 .about-me-content {
-    display: flex;
-    gap: 20px;
-    @media(max-width:650px){
-        flex-wrap:wrap;
-    }
+  display: flex;
+  gap: 20px;
+
 }
 
-.skillbar-wrapper {
-    @media(min-width:650px){
-        flex: 0 0 50%;
-    }
+@media(max-width:650px) {
+  .about-me-content {
+    flex-wrap: wrap;
+  }
 }
 
-.about-me-text {
-    @media(min-width:650px){
-        flex: 0 0 50%;
-    }
+@media(min-width:650px) {
+  .skillbar-wrapper {
+    flex: 0 0 50%;
+  }
+}
+
+.skillbar-wrapper{
+  width: 100%;
+}
+
+@media(min-width:650px) {
+  .about-me-text {
+    flex: 0 0 50%;
+  }
 }
 
 .about-me {
-    margin: 0 40px 20px;
+  margin: 50px 40px 20px;
 }
 
 .skill_wrapper {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 
@@ -32,86 +40,98 @@
 /*portfolio*/
 
 :root {
-    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --animation-duration: 2s;
-  }
-  
-  
-  .animations-disabled,
-  .animations-disabled [data-animation] {
-    animation: none !important;
-    opacity: 1 !important;
-  }
-  
-  .zoomIn {
-    animation-name: zoomIn;
-  }
-  
-  .progress_bar_wrapper {
-    background-color: #493e3e;
-    margin-bottom: 25px;
-    position: relative;
-    height: 5px;
-  }
-  .progress_bar_wrapper .pro-progress_bar {
-    width: 0;
-    background-color: rgb(85, 147, 200);
-    height: 100%;
-    border-radius: 20px;
-  }
-  .progress_bar_wrapper .pro-progress_bar.ninety{
-    width: 90% !important;
-  }
-
-  .progress_bar_wrapper .pro-progress_bar.eightyfive{
-    width: 85% !important;
-  }
-
-  .progress_bar_wrapper .pro-progress_bar.fiftyfive{
-    width: 55% !important;
-  }
-
-  .progress_bar_wrapper .pro-progress_bar.seventyfive{
-    width: 75% !important;
-  }
-
-  .progress_bar_wrapper .pro-progress_bar.eighty{
-    width: 80% !important;
-  }
-
-  .progress_bar_wrapper .pro-progress_bar {
-    transition: width 1.4s ease-in-out 0.5s;
-    border-radius: inherit;
-  }
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 2s;
+}
 
 
-  .project-width-max {
-    background-color: #C5D4EC;
-    padding: 20px;
-    display: flex;
-    margin: 2% 0;
+.animations-disabled,
+.animations-disabled [data-animation] {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.progress_bar_wrapper {
+  background-color: #493e3e;
+  margin-bottom: 25px;
+  position: relative;
+  height: 5px;
+}
+
+.progress_bar_wrapper .pro-progress_bar {
+  width: 0;
+  background-color: rgb(85, 147, 200);
+  height: 100%;
+  border-radius: 20px;
+}
+
+.progress_bar_wrapper .pro-progress_bar.ninety {
+  width: 90% !important;
+}
+
+.progress_bar_wrapper .pro-progress_bar.eightyfive {
+  width: 85% !important;
+}
+
+.progress_bar_wrapper .pro-progress_bar.fiftyfive {
+  width: 55% !important;
+}
+
+.progress_bar_wrapper .pro-progress_bar.seventyfive {
+  width: 75% !important;
+}
+
+.progress_bar_wrapper .pro-progress_bar.eighty {
+  width: 80% !important;
+}
+
+.progress_bar_wrapper .pro-progress_bar {
+  transition: width 1.4s ease-in-out 0.5s;
+  border-radius: inherit;
+}
+
+
+.project-width-max {
+  background-color: #C5D4EC;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .project-width-half {
-    background-color: #C5D4EC;
-    padding: 20px;
-    @media(min-width:650px){
-        flex: 0 0 49%;
-    }
+  background-color: #C5D4EC;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media(min-width:650px) {
+  .project-width-half {
+    flex: 0 0 49%;
+  }
 }
 
 .project-width-half .image {
-    max-width: 90%;
+  max-width: 90%;
 }
 
 .project-width-max .image {
-    flex: 0 0 30%;
-    height: auto;
-    margin-right: 20px;
-    max-width: 250px;
+  flex: 0 0 30%;
+  height: auto;
+  margin-right: 20px;
+  max-width: 250px;
 }
 
-.work a > * {
+@media (max-width: 750px) {
+  .project-width-max .image {
+    display: none;
+  }
+}
+
+.work a>* {
   text-decoration: none;
   color: #000000;
   transition: 0.5s;
@@ -126,35 +146,40 @@
 
 
 .work {
-    margin: 0 150px;
+  margin: 0 50px;
+  margin-top: 50px;
 }
 
 .work-description {
-    margin: auto 0;
+  margin: auto 0;
 }
 
 .project-row {
-    display: flex;
-    gap: 2%;
-    @media(max-width:650px){
-        flex-wrap:wrap;
-    }
+  display: flex;
+  gap: 2%;
+
+}
+
+@media(max-width:650px) {
+  .project-row {
+    flex-wrap: wrap;
+  }
 }
 
 /*contact*/
 
 .contact {
-    margin: 50px 30px;
-    text-align: center;
+  margin: 50px 30px;
+  text-align: center;
 }
 
 .contact .button-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-text {
-    max-width: 80%;
-    margin: 0 auto 20px;
+  max-width: 80%;
+  margin: 0 auto 20px;
 }
