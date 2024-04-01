@@ -1,3 +1,37 @@
+
+//for skill bar
+const skills = [
+  { name: 'Figma', percent: 90 },
+  { name: 'Articulate Storyline', percent: 75 },
+  { name: 'Illustrator', percent: 85 },
+  { name: 'HTML', percent: 55 },
+  { name: 'Lorem Ipsum', percent: 80 }
+  // Add more skills here
+];
+
+skills.forEach(skill => {
+  const progressBar = document.getElementById(skill.name.toLowerCase().replace(/\s/g, '-') + '-progress');
+  progressBar.style.width = '0%'; // Set initial width to 0
+
+  const updateProgress = () => {
+      let width = 0;
+      const interval = setInterval(() => {
+          if (width >= skill.percent) {
+              clearInterval(interval);
+          } else {
+              width++;
+              progressBar.style.width = width + '%';
+              progressBar.textContent = width + '%';
+          }
+      }, 40); // Adjust animation speed here
+  };
+
+  updateProgress();
+});
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

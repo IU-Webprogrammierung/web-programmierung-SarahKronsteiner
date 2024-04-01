@@ -55,44 +55,30 @@
   animation-name: zoomIn;
 }
 
+.skill_wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+
 .progress_bar_wrapper {
-  background-color: #493e3e;
-  margin-bottom: 25px;
-  position: relative;
-  height: 5px;
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
-.progress_bar_wrapper .pro-progress_bar {
-  width: 0;
-  background-color: rgb(85, 147, 200);
+.pro-progress_bar {
   height: 100%;
-  border-radius: 20px;
-}
-
-.progress_bar_wrapper .pro-progress_bar.ninety {
-  width: 90% !important;
-}
-
-.progress_bar_wrapper .pro-progress_bar.eightyfive {
-  width: 85% !important;
-}
-
-.progress_bar_wrapper .pro-progress_bar.fiftyfive {
-  width: 55% !important;
-}
-
-.progress_bar_wrapper .pro-progress_bar.seventyfive {
-  width: 75% !important;
-}
-
-.progress_bar_wrapper .pro-progress_bar.eighty {
-  width: 80% !important;
-}
-
-.progress_bar_wrapper .pro-progress_bar {
-  transition: width 1.4s ease-in-out 0.5s;
-  border-radius: inherit;
-}
+  background-color: #C5D4EC;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  }
 
 
 .project-width-max {
