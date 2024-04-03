@@ -5,13 +5,14 @@ const skills = [
   { name: 'Articulate Storyline', percent: 75 },
   { name: 'Illustrator', percent: 85 },
   { name: 'HTML', percent: 55 },
-  { name: 'Lorem Ipsum', percent: 80 }
-  // Add more skills here
+  { name: 'Swift', percent: 40}
 ];
 
 skills.forEach(skill => {
   const progressBar = document.getElementById(skill.name.toLowerCase().replace(/\s/g, '-') + '-progress');
-  progressBar.style.width = '0%'; // Set initial width to 0
+  if(progressBar != null) {
+    progressBar.style.width = '0%'; 
+  }
 
   const updateProgress = () => {
       let width = 0;
@@ -23,13 +24,11 @@ skills.forEach(skill => {
               progressBar.style.width = width + '%';
               progressBar.textContent = width + '%';
           }
-      }, 40); // Adjust animation speed here
+      }, 40); // Animation speed
   };
 
   updateProgress();
 });
-
-
 
 
 let slideIndex = 1;
@@ -37,23 +36,51 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
 
-  slides[slideIndex-1].style.display = "flex";
-  dots[slideIndex-1].className += " active";
 }
+
+
+//Button to scroll up
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
