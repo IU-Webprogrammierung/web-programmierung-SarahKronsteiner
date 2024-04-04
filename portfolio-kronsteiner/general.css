@@ -139,5 +139,10 @@ html {
 
   }
 
- 
- 
+  .button-up {
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+  }
+
+  
